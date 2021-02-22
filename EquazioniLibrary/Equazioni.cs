@@ -13,7 +13,7 @@ namespace EquazioniLibrary
             }
             return determinata;
         }
-        public static bool IsInconsisted(double a, double b)// true equazione impossibile a=0, b=0
+        public static bool IsInconsisted(double a, double b)// true equazione impossibile a=0, b=0 
         {
             if (a == 0 && b == 0)
                 return true;
