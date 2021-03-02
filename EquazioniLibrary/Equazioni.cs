@@ -46,6 +46,5 @@ namespace EquazioniLibrary
             string x1_x2= $"la soluzione è: {x1} e {x2}";
             return x1_x2;
         }
-
     }
 }
