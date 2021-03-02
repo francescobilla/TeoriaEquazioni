@@ -51,5 +51,14 @@ namespace EquazioniLibrary.Test
             string risp = Equazioni.Soluzioni(a, b, c);
             Assert.AreEqual(risultato_aspettato, risp);
         }
+        [TestMethod]
+        public void EquationDegree1Test()
+        {
+            double a = 3;//2, 2,0,3
+            double b = 0;//4, -4,0,0
+            string risultato_aspettato = "impossibile";//"il risultato dell'equazione è: 2","il risultato dell'equazione è: -2","indeterminato","impossibile"
+            string risp = Equazioni.EquationDegree1(a, b);
+            Assert.AreEqual(risultato_aspettato, risp);
+        }
     }
 }

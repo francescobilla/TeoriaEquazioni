@@ -46,5 +46,19 @@ namespace EquazioniLibrary
             string x1_x2= $"la soluzione è: {x1} e {x2}";
             return x1_x2;
         }
+        public static string EquationDegree1(double a, double b)
+        {
+            
+            if (a == 0 && b == 0)
+            {
+                return "indeterminato";
+            }
+            if(a!=0&& b == 0)
+            {
+                return "impossibile";
+            }
+            double x = b / a;
+            return $"il risultato dell'equazione è: {x}";
+        }
     }
 }
