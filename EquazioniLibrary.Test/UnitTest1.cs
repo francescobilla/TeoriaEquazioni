@@ -15,6 +15,11 @@ namespace EquazioniLibrary.Test
             Assert.AreEqual(risultato_aspettato, risp); 
         }
         [TestMethod]
+        public void IsDeterminedTest2()
+        {
+            Assert.IsFalse(Equazioni.IsDetermined(0));
+        }
+        [TestMethod]
         public void IsInconsistedTest()
         {
             double a = 10;//0,10
@@ -24,12 +29,22 @@ namespace EquazioniLibrary.Test
             Assert.AreEqual(risultato_aspettato, risp);
         }
         [TestMethod]
+        public void IsInconsistedTest2()
+        {
+            Assert.IsFalse(Equazioni.IsInconsisted(10, 3));
+        }
+        [TestMethod]
         public void IsDegree2Test()
         {
             double esponente = 3;//1, 3
             bool risultato_aspettato = true;// false, true
             bool risp = Equazioni.IsDegree2(esponente);
             Assert.AreEqual(risultato_aspettato, risp);
+        }
+        [TestMethod]
+        public void IsDegree2Test2()
+        { 
+            Assert.IsTrue(Equazioni.IsDegree2(3));
         }
         [TestMethod]
         public void DeltaTest()

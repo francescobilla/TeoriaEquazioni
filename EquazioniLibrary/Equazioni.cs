@@ -6,7 +6,7 @@ namespace EquazioniLibrary
     {
         public static bool IsDetermined(double a)// true equazione determinata a>0
         {
-            bool determinata = false;     
+            bool determinata = false;
             if (a>0)
             {
                 return determinata = true;
