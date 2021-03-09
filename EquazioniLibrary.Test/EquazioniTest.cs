@@ -4,7 +4,7 @@ using EquazioniLibrary;
 namespace EquazioniLibrary.Test
 {
     [TestClass]
-    public class UnitTest1
+    public class EquazioniTest
     {
         [TestMethod]
         public void IsDeterminedTest()
