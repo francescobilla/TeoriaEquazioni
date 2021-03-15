@@ -4,10 +4,10 @@ namespace EquazioniLibrary
 {
     public class Equazioni
     {
-        public static bool IsDetermined(double a)// true equazione determinata a>0
+        public static bool IsDetermined(double a)// true equazione determinata a diverso da 0
         {
             bool determinata = false;
-            if (a>0)
+            if (a!=0)
             {
                 return determinata = true;
             }
